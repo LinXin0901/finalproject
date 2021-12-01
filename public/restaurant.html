@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Queuing</title>
+
+  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/polyfill@7/dist/polyfill.min.js"></script>
+  <script src="https://unpkg.com/whatwg-fetch@3.0.0/dist/fetch.umd.js"></script>
+
+  <link rel = "stylesheet" href = "style.css">
+  <script src="./Header.js" async></script>
+</head>
+
+<body>
+    <div id="headLogo" class="header" style="position: fixed; top: 0px; float: inline-start;"></div>
+    <div class="navbar">
+        <a href="queuing.html">QUEUE</a>
+        <a href="register.html">LOGIN/REGISTER</a>
+        <a href="search.html">SEARCH</a>
+        <a href="index.html">HOME</a>
+        <a href="index.html" class="left">Q&R</a>
+    </div>
+
+    <div id = "register_frame" class = "frame">
+        <h2>I wanna dine in...</h2>
+        <hr>
+  
+        <form method = "post" action = "register.js">
+            <p><label class = "label_input">Restaurant  name</label><input type="text" id="userName" class="text_field" placeholder="Restaurant name"/></p>
+            <p><label class = "label_input">Number of diners</label><input type="text" id="phoneNumber" class="text_field" placeholder="Number of diners"/></p>
+            <p><label class = "label_input">Arrival time</label><input type="text" id="password" class="text_field" placeholder="Arrival at 23:59"/></p>
+            
+            <div id="register_control">
+                <a id="finish_register" href="index.html">FINISH</a>
+                <p class="note">By signing up you agree to the our Privacy Policy</p>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="footer">
+        <h2>FOLLOW US</h2>
+    </div>
+</body>
+</html>
